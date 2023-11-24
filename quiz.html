@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT UniLife Blog</title>
+    <meta name="title" content="IT UniLife Blog">
+    <meta name="description" content="Blog WebSite">
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+    <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  </head>
+
+<body id="top">
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-code fa-xl" style="color: #fafafa;"></i>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="119" height="37" alt="Wren logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="./index.html" class="navbar-link hover-1" data-nav-toggler>Main</a>
+          </li>
+          <li>
+            <a href="./posts.html" class="navbar-link hover-1" data-nav-toggler>Posts</a>
+          </li>
+          <li>
+            <a href="./contacts.html" class="navbar-link hover-1" data-nav-toggler>Contacts</a>
+          </li>
+
+          <li>
+            <a href="./quiz.html" class="navbar-link hover-1" data-nav-toggler>Quiz</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="./contacts.html" class="btn btn-primary">Subscribe</a>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="headline headline-1 section-title">
+              Quiz
+            </h1>
+          </div>
+          <img src="./assets/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+          <img src="./assets/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+        </div>
+      </section>
+      </head>
+
+      <body>
+
+        <div id="quiz-container">
+          <div class="question" id="question1">
+            <p>1. Which programming language is used in frontend?</p>
+            <div class="options">
+              <label><input type="radio" name="q1" value="JavaScript"> JavaScript</label>
+              <label><input type="radio" name="q1" value="C++"> C++</label>
+              <label><input type="radio" name="q1" value="Java"> Java</label>
+            </div>
+          </div>
+
+          <div class="question" id="question2">
+            <p>2. What is the largest planet in our solar system?</p>
+            <div class="options">
+              <label><input type="radio" name="q2" value="Earth"> Earth</label>
+              <label><input type="radio" name="q2" value="Jupiter"> Jupiter</label>
+              <label><input type="radio" name="q2" value="Mars"> Mars</label>
+            </div>
+          </div>
+
+          <div class="question" id="question2">
+            <p>3. Which university I choosed to study?</p>
+            <div class="options">
+              <label><input type="radio" name="q3" value="AITU">AITU</label>
+              <label><input type="radio" name="q3" value="AMU">AMU</label>
+              <label><input type="radio" name="q3" value="MIT">MIT</label>
+            </div>
+          </div>
+
+          <div class="question" id="question2">
+            <p>4. what specialty am I studying?</p>
+            <div class="options">
+              <label><input type="radio" name="q4" value="Software Engineer">Software Engineer</label>
+              <label><input type="radio" name="q4" value="Media Technologies">Media Technologies</label>
+              <label><input type="radio" name="q4" value="Cybersecurity">Cybersecurity</label>
+            </div>
+          </div>
+
+          <div class="question" id="question2">
+            <p>5. What is my name?</p>
+            <div class="options">
+              <label><input type="radio" name="q5" value="Ayazhan"> Ayazhan</label>
+              <label><input type="radio" name="q5" value="Aizhan"> Aizhan</label>
+              <label><input type="radio" name="q5" value="Abay"> Abay</label>
+            </div>
+          </div>
+
+          <audio id="confirmationSound" src="./assets/buttonclick.mp3"></audio>
+          <button onclick="submitQuiz()">Submit</button>
+
+          <div id="result"></div>
+        </div>
+      <footer>
+      <div class="container">
+        <div class="card footer">
+          <div class="footer-text">
+            <p class="copyright">
+              &copy; IT UniLife - Phone number: 8(705) 281 3556
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+  <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+</a>
+<script src="https://kit.fontawesome.com/29b8e4f39e.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+</body>
+</html> 
